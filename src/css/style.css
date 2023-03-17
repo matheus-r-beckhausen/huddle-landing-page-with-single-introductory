@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background: url(../images/bg-desktop.png) center center no-repeat;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
     background-size: cover;
     background-color: hsl(257, 40%, 49%);
     display: grid;
