@@ -1,0 +1,77 @@
+@media (max-width: 1300px) {
+    body {
+        background: url(/src/images/bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .header .logo {
+        height: 63px;
+    }
+
+    .main .illustration {
+        margin: 50px 74px 120px;
+    }
+
+    .main .info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main .info h1 {
+        font-size: 4.7rem;
+        margin-bottom: 30px;
+    }
+
+    .main .info p {
+        font-size: 3.2rem;
+        margin: 0 74px 45px;
+        line-height: 48px;
+    }
+
+    .main .info .register {
+        font-size: 2.4rem;
+        align-self: center;
+        padding: 23px 150px;
+    }
+
+    .footer .social-media {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .footer .social-media i {
+        height: 60px;
+        width: 60px;
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .info h1 {
+        font-size: 3rem;
+        margin: 0 20px 30px;
+    }
+
+    .main .info p {
+        font-size: 2rem;
+        margin: 0 70px 45px;
+    }
+
+    .main .info .register {
+        font-size: 2rem;
+        align-self: center;
+        padding: 15px 100px;
+    }
+}

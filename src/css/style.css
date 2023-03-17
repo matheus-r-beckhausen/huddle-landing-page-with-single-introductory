@@ -1,0 +1,110 @@
+body {
+    height: 100vh;
+    background: url(/src/images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    display: grid;
+    grid: "header header" 200px "main main" 1fr "footer footer" 90px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    grid-area: header;
+}
+
+.header .logo {
+    height: 53px;
+    margin: 71px;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+.main .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-bottom: 130px;
+}
+
+.main .info h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.main .info p {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main .info .register {
+    padding: 14px 60px;
+    align-self: flex-start;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px #333;
+    font-size: 1.8rem;
+    color: hsl(257, 40%, 49%);
+}
+
+.main .info .register:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.footer .attribution { 
+    font-size: 1.1rem; 
+    text-align: center;
+}
+
+.footer .attribution a { 
+    font-size: 1.1rem;
+}
+
+.footer .attribution a:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.footer .social-media {
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 90px;
+}
+
+.footer .social-media a {
+    margin: 8px;
+}
+
+.footer .social-media i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+    border: solid 1px;
+    border-radius: 50%;
+}
+
+.footer .social-media a:hover {
+    color: hsl(300, 69%, 71%);
+}
