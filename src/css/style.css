@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../images/bg-desktop.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -69,11 +69,15 @@ body {
 
 .footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer .attribution { 
     font-size: 1.1rem; 
     text-align: center;
+    align-items: end;
+    justify-content: center;
 }
 
 .footer .attribution a { 
@@ -87,6 +91,7 @@ body {
 .footer .social-media {
     height: 73px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: end;
     margin-right: 90px;
