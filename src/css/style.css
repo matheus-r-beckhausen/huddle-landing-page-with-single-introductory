@@ -8,9 +8,12 @@ body {
     display: grid;
     grid: "header header" 200px "main main" 1fr "footer footer" 90px; 
     font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
 }
 
 .header {
+    max-width: 1440px;
     display: flex;
     align-items: center;
     grid-area: header;
@@ -22,9 +25,10 @@ body {
 }
 
 .main {
+    max-width: 1440px;
     grid-area: main;
     display: grid;
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 60% 40%;
 }
 
 .main .illustration {
@@ -68,6 +72,7 @@ body {
 }
 
 .footer {
+    max-width: 1440px;
     grid-area: footer;
     display: flex;
     flex-direction: column;
